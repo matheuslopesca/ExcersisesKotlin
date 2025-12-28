@@ -31,3 +31,43 @@ O clássico jogo Jokenpô contra o computador.
 *   **Lógica Circular:** "Maior que" não funciona aqui (Pedra > Tesoura, mas Tesoura > Papel, etc). Foi necessário mapear especificamente as condições de vitória (`&&`).
 *   **Lógica Booleana:** Como construir condições compostas (ex: `escolha == 1 && computador == 3`) para verificar vitórias específicas.
 *   **Reforço de Escopo:** Novamente, a importância de declarar a variável de repetição (`Quer jogar novamente?`) fora do escopo do `do-while` para que o teste de saída funcione.
+
+---
+
+## 4. A Tabuada Personalizada (`calculatorTab.kt`)
+**Objetivo:** Praticar loops definidos (`for`) e modularização de código.
+O programa solicita um número ao usuário e exibe sua tabuada completa de 1 a 10.
+
+**Aprendizados Chave:**
+*   **Modularização:** A separação de responsabilidades em funções (`getInput` vs `geraTabuada`) facilita a leitura e manutenção.
+*   **Interpolação de Strings:** Uso de `${}` para realizar cálculos diretamente dentro da string de exibição.
+
+---
+
+## 5. Calculadora de IMC (`icmCalculator.kt`)
+**Objetivo:** Praticar lógica matemática e a estrutura de decisão `when`.
+Calcula o Índice de Massa Corporal (IMC) e fornece um diagnóstico de saúde baseado no resultado.
+
+**Aprendizados Chave:**
+*   **When sem Argumentos:** Uso da estrutura `when` como uma alternativa mais limpa a cadeias de `if/else if`, testando condições booleanas diretamente.
+*   **Tipagem Forte:** Manipulação de `Double` para cálculos precisos de peso e altura.
+
+---
+
+## 6. Jogo da Adivinhação (`MisteriousGame.kt`)
+**Objetivo:** Trabalhar com números aleatórios (`Random`) e loops condicionais (`do-while`).
+Um jogo onde o usuário tenta adivinhar um número secreto, recebendo dicas de "Mais" ou "Menos".
+
+**Aprendizados Chave:**
+*   **Lógica de Loop:** Uso do `do-while` para garantir que o input seja solicitado ao menos uma vez antes do teste lógico.
+*   **Randomização:** Uso de `Random.nextInt` e a importância de entender os limites (exclusivo vs inclusivo) dos intervalos.
+
+---
+
+## 7. Lista de Convidados (`guessList.kt`)
+**Objetivo:** Introdução ao conceito de Coleções (`List`) e manipulação de dados em memória.
+Armazena nomes em uma lista dinâmica e os exibe na ordem inversa.
+
+**Aprendizados Chave:**
+*   **Passagem por Referência:** Compreensão de que Objetos (como Listas) passados para funções podem ser modificados internamente sem necessidade de retorno.
+*   **Coleções Mutáveis:** Uso de `MutableList` para adicionar itens dinamicamente em tempo de execução.
