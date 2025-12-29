@@ -71,3 +71,25 @@ Armazena nomes em uma lista dinâmica e os exibe na ordem inversa.
 **Aprendizados Chave:**
 *   **Passagem por Referência:** Compreensão de que Objetos (como Listas) passados para funções podem ser modificados internamente sem necessidade de retorno.
 *   **Coleções Mutáveis:** Uso de `MutableList` para adicionar itens dinamicamente em tempo de execução.
+
+---
+
+## 8. O Analisador de Números (`NumberAnalyzer.kt`) - *Novo!*
+**Objetivo:** Praticar Listas (`List/MutableList`), Loops (`for`), Random e Lógica de Comparação.
+Gera uma lista de números aleatórios e realiza análises manuais (contagem de pares/ímpares, maior/menor valor) para exercitar a lógica pura sem depender excessivamente de funções prontas.
+
+**Aprendizados Chave:**
+*   **Algoritmo "Rei da Colina":** Implementação manual da lógica para encontrar Maior/Menor valor percorrendo a lista e mantendo o "campeão atual".
+*   **Iteração Segura:** Uso de `list.indices` para percorrer listas de forma segura e performática, evitando erros de "Index Out of Bounds".
+*   **Clean Code:** A importância de manter nomenclaturas consistentes (Inglês vs Português) para evitar confusão mental.
+
+---
+
+## 9. Simulador de Supermercado (`Supermarket.kt`) - *Novo!*
+**Objetivo:** Praticar Loops condicionais (`while/do-while`), Acumuladores e Lógica Matemática com Double.
+Simula um caixa onde o usuário "compra" itens até o dinheiro acabar. Exige controle de fluxo cuidadoso para não permitir gastos além do saldo.
+
+**Aprendizados Chave:**
+*   **Perigos do Casting:** Converter `Double` para `Int` (ex: `0.50` para `0`) pode quebrar a lógica de validação. A comparação deve ser feita com o tipo original.
+*   **Controle de Fluxo:** Estruturar o `do-while` para garantir que a verificação de saldo ocorra *antes* da subtração efetiva.
+*   **Lógica de Saída:** Diferença entre sair por vontade própria (loop break) e sair por falta de recursos (while condition).
